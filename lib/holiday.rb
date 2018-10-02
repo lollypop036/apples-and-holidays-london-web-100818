@@ -39,7 +39,7 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 
-       def all_supplies_in_holidays(holiday_hash)
+def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |szn,szn_hash|
     
     szn = szn.to_s.capitalize!
@@ -49,8 +49,11 @@ end
 
     
    
-   holiday = holiday.to_s.capitalize!
- 
+   holiday = holiday.to_s
+   holiday = holiday.split("_")
+holiday.map  {|x| x.capitalize!}
+ holiday = holiday.join(" ")
+
   gifts = gifts.join(", ")
  
  
@@ -63,6 +66,7 @@ end
 
  end
  end
+
 
 
 def all_holidays_with_bbq(holiday_hash)
