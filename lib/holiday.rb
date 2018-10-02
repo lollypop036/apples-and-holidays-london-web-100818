@@ -52,7 +52,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{szn}:"
    
  end
-end
+
  end
   
   
