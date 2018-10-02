@@ -39,7 +39,7 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each do |szn,szn_hash|
+  holiday_supplies.each do |szn,szn_hash|
     
     
     szn.each do |holiday,gifts|
