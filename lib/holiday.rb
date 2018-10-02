@@ -78,7 +78,7 @@ def all_holidays_with_bbq(holiday_hash)
    
   szn_hash.each do |holiday,gifts|
     
-    new_array.push(gifts) if holiday.any?
+    new_array.push(gifts) if holiday.any? {|x| x
   
 
 end
