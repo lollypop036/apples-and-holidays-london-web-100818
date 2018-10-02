@@ -46,7 +46,8 @@ def all_supplies_in_holidays(holiday_hash)
       
    szn = szn.to_s.capitalize!
    
-   holiday.each |x| x.gbsub("_", " ")
+   holiday.each |x| x.split("_")
+   return x }
   
     puts "#{szn}:"
    
