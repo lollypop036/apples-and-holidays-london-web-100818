@@ -40,9 +40,12 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |szn,szn_hash|
-    szn.each do |holiday,gifts|
+    
+    
+    #szn.each do |holiday,gifts|
       
-    szn.to_s.capitalize!
+   szn.to_s.capitalize!
+  
     puts "#{szn}"
    
  
