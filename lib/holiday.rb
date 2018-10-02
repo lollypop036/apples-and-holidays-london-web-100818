@@ -40,31 +40,29 @@ end
 
 
 def all_supplies_in_holidays(holiday_hash)
+
   holiday_hash.each do |szn,szn_hash|
     
     szn = szn.to_s.capitalize!
-     puts "#{szn}:" 
-    szn_hash.each do |holiday,gifts|
     
+    puts "#{szn}:" 
+    
+  szn_hash.each do |holiday,gifts|
+    
+    holiday = holiday.to_s
+    holiday = holiday.split("_")
+    holiday.map  {|x| x.capitalize!}
+    holiday = holiday.join(" ")
 
-    
-   
-   holiday = holiday.to_s
-   holiday = holiday.split("_")
-holiday.map  {|x| x.capitalize!}
- holiday = holiday.join(" ")
-
-  gifts = gifts.join(", ")
+    gifts = gifts.join(", ")
  
- 
-    
-  puts "  #{holiday}: #{gifts}"
+    puts "  #{holiday}: #{gifts}"
   
   
    
- end
+              end
 
- end
+                  end
  end
 
 
@@ -72,6 +70,16 @@ holiday.map  {|x| x.capitalize!}
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
+  
+  new_array = []
+  
+  holiday_hash.each do |szn,szn_hash|
+    
+   
+  szn_hash.each do |holiday,gifts|
+    
+    
+  
 
 end
 
