@@ -43,7 +43,7 @@ def all_supplies_in_holidays(holiday_hash)
     szn.each do |holiday,gifts|
       
     szn.to_s.capitalize!
-    binding.pry
+    puts "#{szn}"
    
  
 end
