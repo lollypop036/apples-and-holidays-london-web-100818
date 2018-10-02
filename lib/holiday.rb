@@ -45,6 +45,8 @@ def all_supplies_in_holidays(holiday_hash)
     szn_hash.each do |holiday,gifts|
       
    szn = szn.to_s.capitalize!
+   
+   holiday.each |x|
   
     puts "#{szn}:"
    
