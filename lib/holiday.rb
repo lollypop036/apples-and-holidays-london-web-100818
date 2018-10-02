@@ -48,7 +48,7 @@ def all_supplies_in_holidays(holiday_hash)
    
    holiday = holiday.to_s.capitalize!
  
-  gifts = gifts.to_s
+  gifts = gifts.to_s!
  
  
   puts "#{szn}:"
