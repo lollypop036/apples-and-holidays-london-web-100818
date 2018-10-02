@@ -78,12 +78,16 @@ def all_holidays_with_bbq(holiday_hash)
    
   szn_hash.each do |holiday,gifts|
     
-    new_array.push(gifts) if holiday.any? {|x| x
+    new_array.push(gifts) if holiday.any? {|x| x.include("BBQ")
   
 
 end
 
+end
 
+new_array
+
+end
 
 
 
