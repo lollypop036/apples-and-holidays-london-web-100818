@@ -47,7 +47,7 @@ def all_supplies_in_holidays(holiday_hash)
    szn = szn.to_s.capitalize!
    
    holiday.to_s.split("_")
-   holiday.map {|x| x.capitalize!.join(" ")
+   holiday.map {|x| x.capitalize!.join(" ")}
    
    puts holiday
   
